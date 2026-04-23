@@ -1,0 +1,109 @@
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 80px 20px 30px;
+}
+
+/* Contenedor */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top */
+.footer-top {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-top h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer-top p {
+  color: #cbd5f5;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Info grid */
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-item h4 {
+  margin-bottom: 8px;
+  color: #4caf50;
+}
+
+.footer-item p {
+  color: #e2e8f0;
+}
+
+.footer-link {
+  color: #4caf50;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+/* 💻 Desktop */
+@media (min-width: 768px) {
+  .footer-info {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
+
+  .footer-top h2 {
+    font-size: 40px;
+  }
+}
+
+/* 📱 WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  background: #25d366;
+  color: white;
+  font-size: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
